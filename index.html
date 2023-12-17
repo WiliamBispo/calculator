@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="index.js" defer></script>
+
+    <title>Calculadora</title>
+  </head>
+
+  <body>
+    <main class="container" data-theme="dark">
+      <header class="header">
+        <h1>Calc.js</h1>
+        <button id="themeSwitcher">TEMA</button>
+      </header>
+
+      <div>
+        <input type="text" id="input" disabled/>
+      </div>
+
+      <div id="keys">
+        <button class="charKey item1" data-value="7">7</button>
+        <button class="charKey item2" data-value="8">8</button>
+        <button class="charKey item3" data-value="9">9</button>
+        <button class="item4" id="clearOne">&lt;</button>
+        <button class="charKey item5" data-value="4">4</button>
+        <button class="charKey item6" data-value="5">5</button>
+        <button class="charKey item7" data-value="6">6</button>
+        <button class="charKey item8" data-value="+">+</button>
+        <button class="charKey item9" data-value="1">1</button>
+        <button class="charKey item10" data-value="2">2</button>
+        <button class="charKey item11" data-value="3">3</button>
+        <button class="charKey item12" data-value="-">-</button>
+        <button class="charKey item13" data-value=".">.</button>
+        <button class="charKey item14" data-value="0">0</button>
+        <button class="charKey item15" data-value="/">/</button>
+        <button class="charKey item16" data-value="*">x</button>
+        <button class="item17" id="clear">RESET</button>
+        <button class="item18" id="equal">=</button>
+      </div>
+    </main>
+  </body>
+</html>

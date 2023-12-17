@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+    --bg-color: #3b4664;
+    --font-color: #feffff;
+    --bg-color-input: #181f32;
+    --bg-color-keys: #252d44;
+    --bg-color-button: #eae3db;
+    --font-color-button: #434957;
+    --bx-shadow-button: #b6a499;
+    --bg-color-button-hover: #ffffff;
+    --bg-color-button-item4: #647299;
+    --bx-shadow-button-item4: #414d75;
+    --bg-color-button-item18: #d13f30;
+    --bx-shadow-button-item18: #992416;
+    --bg-color-button-item4-hover: #a2b3e1;
+    --bg-color-button-item18-hover: #f96c5b;
+    --font-color-button-item4: #feffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 35.8rem;
+    padding: 2rem 1rem;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--font-color);
+    padding: 2rem 0;
+}
+
+.header button {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: .25rem;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    color: var(--font-color);
+    border: .125rem solid var(--font-color);
+    cursor: pointer;
+}
+
+#input {
+    background-color: var(--bg-color-input);
+    padding: 2.5rem;
+    width: 100%;
+    text-align: end;
+    color: var(--font-color);
+    font-size: 3rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1.5rem 0;
+    gap: 1.5rem;
+    background-color: var(--bg-color-keys);
+    padding: 1.8rem;
+    border-radius: .5rem;
+
+    grid-template-areas: 
+        "item1 item2 item3 item4"
+        "item5 item6 item7 item8"
+        "item9 item10 item11 item12"
+        "item13 item14 item15 item16"
+        "item17 item17 item18 item18";   
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+.item6 {
+    grid-area: item6;
+}
+
+.item7 {
+    grid-area: item7;
+}
+
+.item8 {
+    grid-area: item8;
+}
+
+.item9 {
+    grid-area: item9;
+}
+
+.item10 {
+    grid-area: item10;
+}
+
+.item11 {
+    grid-area: item11;
+}
+
+.item12 {
+    grid-area: item12;
+}
+
+.item13 {
+    grid-area: item13;
+}
+
+.item14 {
+    grid-area: item14;
+}
+
+.item15 {
+    grid-area: item15;
+}
+
+.item16 {
+    grid-area: item16;
+}
+
+.item17 {
+    grid-area: item17;
+}
+
+.item18 {
+    grid-area: item18;
+}
+
+#keys button {
+    background-color: var(--bg-color-button);
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--font-color-button);
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    font-weight: 700;
+    box-shadow: 1px 3px 0px var(--bx-shadow-button);
+    transition: .15s;
+    outline: none;
+}
+
+#keys button:hover {
+    background-color: var(--bg-color-button-hover);
+}
+
+#keys .item4 {
+    background-color: var(--bg-color-button-item4);
+    box-shadow: 1px 3px 0px var(--bx-shadow-button-item4);
+    color: var(--font-color-button-item4);
+}
+
+#keys .item17 {
+    font-size: 1.8rem;
+    background-color: var(--bg-color-button-item4);
+    box-shadow: 1px 3px 0px var(--bx-shadow-button-item4);
+    color: var(--font-color-button-item4);
+}
+
+#keys .item18 {
+    background-color: var(--bg-color-button-item18);
+    box-shadow: 1px 3px 0px var(--bx-shadow-button-item18);
+    color: var(--font-color-button-item4);
+}
+
+#keys .item4:hover {
+    background-color: var(--bg-color-button-item4-hover);
+}
+
+#keys .item17:hover {
+    background-color: var(--bg-color-button-item4-hover);
+}
+
+#keys .item18:hover {
+    background-color: var(--bg-color-button-item18-hover);
+}
+
+@media (max-width: 374px) {
+    #input {
+        padding: 1.3rem;
+    }
+
+    #keys {
+        padding: 1.4rem;
+        gap: .90rem;
+    }
+
+    #keys button {
+        font-size: 2rem;
+    }
+
+    #keys .item17 {
+        font-size: 1.3rem;
+    }
+
+    #keys .item18 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
