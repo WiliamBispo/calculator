@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-https://wiliambispo.github.io/calculator
+https://wiliambispo.github.io/calculator/
 
 Calc.js é uma calculadora web responsiva que pode ser utilizada tanto em computadores quanto em dispositivos móveis, incluindo tablets.
 
