@@ -204,7 +204,7 @@ body {
     background-color: var(--bg-color-button-item18-hover);
 }
 
-@media (max-width: 374px) {
+@media (max-width: 375px) {
     .container {
         padding: 1rem;  
     }
