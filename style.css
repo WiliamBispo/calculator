@@ -209,6 +209,10 @@ body {
         padding: 1rem;  
     }
 
+    .header {
+        padding: 1rem 0 2rem 0;
+    }
+
     #input {
         padding: 1.3rem;
     }
